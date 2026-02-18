@@ -110,7 +110,7 @@ Mugure: ['Clinical Medicine', 'Medical Imaging', 'Pharmacology']
 
 ClaireKimani-206-ontology-kbs/
 ├── README.md
-└── ontology.ipynb
+└── ClaireKimani-206-ontology-kbs.ipynb
 
 ## How to Run the Notebook
 
