@@ -71,7 +71,46 @@ Courses include:
 - Oncology
 - Surgery
 
----
+--------------
+## How to Run Tests
+
+All unit tests are included in the notebook and can be executed from the relevant cell.  
+The tests automatically validate:
+
+- Student/course addition  
+- Prerequisite inference  
+- Eligibility checking  
+- Recommendations
+
+To run the tests, just execute the unit test cell in order.  
+You will see output indicating which tests passed or failed.
+
+------
+## Example Output
+
+Nashepae → General Pathology
+Eligible: True
+----------------------------------------
+Nashepae → Oncology
+Eligible: False
+Missing prerequisites: {'General Pathology', 'Pharmacology'}
+----------------------------------------
+Kago → Human Physiology
+Eligible: False
+Missing prerequisites: {'General Anatomy'}
+----------------------------------------
+Recommendations:
+Nashepae: ['General Pathology', 'Medical Imaging', 'Pharmacology']
+Mugure: ['Clinical Medicine', 'Medical Imaging', 'Pharmacology']
+
+
+---------
+
+## Repository Structure
+
+ClaireKimani-206-ontology-kbs/
+├── README.md
+└── ontology.ipynb
 
 ## How to Run the Notebook
 
@@ -79,5 +118,9 @@ Open the notebook and run cells **top → bottom**:
 
 ```bash
 jupyter notebook
+
+
+
+
 
 
